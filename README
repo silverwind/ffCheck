@@ -1,0 +1,8 @@
+This is basically BigBrother's raid consumables check without dependancies and automated detection of 10/25 man difficulty setting.
+
+Usage:
+	
+- Create a macro with "/run Flasks:Check()"
+- Normal click on the macro reports locally, Shift + Click reports to the raid chat.
+
+Credit goes to Cryect's BigBrother from which I've taken the spellID table.

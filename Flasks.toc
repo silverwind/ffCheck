@@ -1,0 +1,6 @@
+## Interface: 30300
+## Title: Flasks
+## Notes: Raid consumables check
+## Author: Silverwind
+## X-Category: Buffs & Debuffs
+Flasks.lua
