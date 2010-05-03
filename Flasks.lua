@@ -6,37 +6,29 @@ local foods = {
 }
 
 local flasks = {
-	17626, -- Flask of the Titans
 	17627, -- Flask of Distilled Wisdom
-	17628, -- Flask of Supreme Power
-	17629, -- Flask of Chromatic Resistance
-	28518, -- Flask of Fortification
-	28519, -- Flask of Mighty Restoration
-	28520, -- Flask of Relentless Assault
-	28521, -- Flask of Blinding Light
-	28540, -- Flask of Pure Death
 	53752, -- Lesser Flask of Toughness
 	53755, -- Flask of the Frost Wyrm
 	53758, -- Flask of Stoneblood
-	53760, -- Flask of Pure Mojo
-	54212, -- Flask of Endless Rage
+	53760, -- Flask of Endless Rage
+	54212, -- Flask of Pure Mojo
 	62380, -- Lesser Flask of Resistance
 }
 
 local function ScanBuffs(unit)
 	table.wipe(unitbuffs)
-	local index = 1
+	local i = 1
 	while true do
-		local name, _, _, _, _, _, _, _, _, _, _ = UnitAura(unit,index)
+		local name  = UnitAura(unit,i)
 		if not name then return end
 		unitbuffs[name] = true
-		index = index + 1
+		i = i + 1
 	end
 end
 
 local function CheckFood(unit)
 	ScanBuffs(unit)
-	for i, v in ipairs(foods) do
+	for _, v in ipairs(foods) do
 		if unitbuffs[GetSpellInfo(v)] then
 			return true
 		end
@@ -45,7 +37,7 @@ end
 
 local function CheckFlask(unit)
 	ScanBuffs(unit)
-	for i, v in pairs(flasks) do
+	for _, v in pairs(flasks) do
 		if unitbuffs[GetSpellInfo(v)] then
 			return true
 		end
