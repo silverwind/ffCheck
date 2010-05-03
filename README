@@ -2,7 +2,7 @@ This is basically BigBrother's raid consumables check without dependancies and a
 
 Usage:
 	
-- Create a macro with "/run Flasks:Check()"
+- Create a macro with "/flasks"
 - Normal click on the macro reports locally, Shift + Click reports to the raid chat.
 
 Credit goes to Cryect's BigBrother from which I've taken the spellID table.
