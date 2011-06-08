@@ -1,0 +1,13 @@
+## Interface: 40200
+## Title: ffCheck
+## Notes: Checks the usage of flasks and foods of your party and raid members and optionally report it in chat.
+## Notes-deDE: Prüft die Verwendung von Fläschchen und Essen eurer Gruppe oder eures Raids und berichtet das Ergebnis optional im Chat.
+## Version: 1.12
+## Author: Silverwind
+## SavedVariables: ffCheckDB
+## X-Category: Buffs & Debuffs
+
+LibStub.lua
+LibDataBroker-1.1.lua
+
+ffCheck.lua
