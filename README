@@ -1,8 +1,13 @@
-This is basically BigBrother's raid consumables check without dependancies and automated detection of 10/25 man difficulty setting.
+ffCheck - Flask and Food check
+
+This Addon checks the usage of flasks and food of your party/raid members and reports the results to chat (or just to yourself). The aim is to be as lightweight as possible.
+
+It features automated raid size detection (so it will only check groups 1-2 in 10man and 1-5 in 25man) and only takes Cataclysm flasks as valid flasks (if you really need WotLK-Flasks, edit the LUA).
+
+A DataBroker-Launcher is provided to run the check. There is also an option to run the check automatically when a ReadyCheck is started.
 
 Usage:
-	
-- Create a macro with "/flasks"
-- Normal click on the macro reports locally, Shift + Click reports to the raid chat.
+Either use the LDB launcher or create a macro with /ffcheck. Per default, Click reports locally, Shift-Click reports to chat.
 
-Credit goes to Cryect's BigBrother from which I've taken the spellID table.
+Settings:
+Check the ingame options panel for configuration options.
